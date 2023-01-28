@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+.page {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	background: #390da1;
+	color: #fff;
+	font-size: 24px;
+	padding: 24px 48px;
+}
+.filter {
+	background: #bfbfbf;
+	color: #000;
+	font-size: 18px;
+	padding: 16px 48px;
+}
+.bubble-chart-area {
+	margin: 24px 48px;
+	flex: 1;
+	position: relative;
+}
+.bubbles {
+	stroke-width: 2px;
+	stroke: white;
+}
+.bubbles:hover {
+	stroke: black;
+}
+.info-wrapper {
+	border: 1px solid #ccc;
+	margin: 24px 48px;
+	max-width: 770px;
+	display: flex;
+	flex-direction: row;
+}
+
+.info-wrapper .population-count {
+	padding: 24px;
+	min-width: 200px;
+}
+
+.info-wrapper .population-count .count {
+	margin: 0;
+	color: #494949;
+}
+
+.info-wrapper .population-count .count-heading span#count {
+	font-size: 48px;
+}
+
+.info-wrapper .population-count .count-heading span.bn {
+	font-size: 22px;
+}
+
+.info-wrapper .population-growth {
+	width: 100%;
+	border-left: 1px solid #ccc;
+}
+
+.line-chart-container {
+	width: 100%;
+	height: 180px;
+}
+
+.population-growth .title {
+	margin: 24px 24px 0;
+}
+
+@media only screen and (max-width: 700px) {
+  header, .filter {
+    text-align: center;
+  }
+	.info-wrapper .population-growth {
+		display: none;
+	}
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ABC</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body>
+		<div class="page">
+			<header>
+				ABC
+				CO
+			</header>
+			<div class="filter">
+				<lable>Select Year:</lable>
+				<select id="select-year-filter" onchange="onChangeYear(event)"></select>
+			</div>
+			<div class="info-wrapper">
+				<div class="population-count">
+					<p>World Population (2021)</p>
+					<h3 class="count-heading">
+						<span id="count"></span>
+						<span class="bn">Bn</span>
+					</h3>
+				</div>
+				<div class="population-growth">
+					<div class="title">Population Growth</div>
+					<div class="line-chart-container" id="line-chart-container">
+						<div id="line-chart"></div>
+					</div>
+				</div>
+			</div>
+			<div class="bubble-chart-area" id="bubble-chart-container">
+				<div id="bubble-chart"></div>
+			</div>
+		</div>
+	</body>
+	<script src="./js/d3.v6.js"></script>
+	<script src="./js/bubble-chart.js"></script>
+	<script src="./js/line-chart.js"></script>
+	<script src="./js/script.js"></script>
+</html>
